@@ -1,0 +1,16 @@
+Source: gox
+Section: devel
+Priority: optional
+Maintainer: Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>
+Build-Depends: debhelper-compat (= 13), golang-github-hashicorp-go-version-dev, golang-github-mitchellh-iochan-dev
+Standards-Version: 4.6.0
+Homepage: https://github.com/mitchellh/gox
+Vcs-Browser: https://gitlab.com/kaisenlinux/packages/gox
+Vcs-Git: https://gitlab.com/kaisenlinux/packages/gox.git
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/mitchellh/gox
+
+Package: gox
+Architecture: amd64 arm64 i386
+Depends: ${misc:Depends}
+Description: A dead simple, no frills Go cross compile tool
